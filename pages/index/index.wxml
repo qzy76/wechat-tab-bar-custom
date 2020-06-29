@@ -1,0 +1,33 @@
+<view style='margin-bottom:130rpx;'>
+	当前身份类型:{{userType}}
+非当前身份的页面点击会不生效，因为是先走登录
+
+<view bindtap="toPage" data-type="redirect" data-url="/pages/login/index">导航页--点击返回选择身份页</view>
+<view bindtap="toPage" data-url="/pages/to_route/index">导航页--点击跳转到非导航栏页</view>
+<view bindtap="toPage" data-url="/pages/component/identity_a/index/index">导航页--点击跳转到A身份首页</view>
+<view bindtap="toPage" data-url="/pages/component/identity_a/mine/index">导航页--点击跳转到A身份我的页面</view>
+<view bindtap="toPage" data-url="/pages/component/identity_b/index/index">导航页--点击跳转到B身份首页</view>
+<view bindtap="toPage" data-url="/pages/component/identity_b/mine/index">导航页--点击跳转到B身份我的页面</view>
+当前页路径:
+<!-- 组件显示，根据自己需求添加 -->
+<block wx:if="{{userType==0}}">
+  <view hidden="{{currentTab == 1}}">
+    <identity-a-index />
+  </view>
+  <view hidden="{{currentTab == 0}}">
+    <identity-a-mine />
+  </view>
+</block>
+<block wx:else>
+  <view hidden="{{currentTab == 1}}">
+    <identity-b-index />
+  </view>
+  <view hidden="{{currentTab == 0}}">
+    <identity-b-mine />
+  </view>
+</block>
+
+</view>
+
+<!-- 自定义 tabbar -->
+<custom-tab-bar tabBarList="{{tabBarList}}" selected="{{currentTab}}" bind:comEvent="switchTab" />

@@ -1,0 +1,4 @@
+<!--pages/login/index.wxml-->
+自定义多身份底部导航栏
+
+<view wx:for="{{2}}" wx:key="index" bindtap="binLogin" data-index="{{index}}">身份{{index+1}}登录</view>

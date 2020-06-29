@@ -1,0 +1,14 @@
+{
+	"pages": [
+		"pages/login/index",
+		"pages/index/index",
+		"pages/to_route/index"
+	],
+	"window": {
+		"backgroundTextStyle": "light",
+		"navigationBarBackgroundColor": "#fff",
+		"navigationBarTitleText": "自定义底部栏",
+		"navigationBarTextStyle": "black"
+	},
+	"sitemapLocation": "sitemap.json"
+}

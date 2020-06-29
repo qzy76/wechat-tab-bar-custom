@@ -1,0 +1,5 @@
+<!--pages/component/identity_a/index/index.wxml-->
+<text >pages/component/identity_a/index/index.wxml</text>
+<view bindtap="toPage" data-url="/pages/to_route/index">当前页--点击跳转到pages/to_route/index</view>
+<view bindtap="toPage" data-url="/pages/component/identity_a/mine/index">当前页--点击跳转到pages/component/identity_a/mine/index</view>
+<view wx:for="{{list}}" wx:key="index">{{item}}</view>

@@ -1,0 +1,11 @@
+{
+  "usingComponents": {
+    "custom-tab-bar": "/components/custom-tab-bar/index",
+
+
+    "identity-a-index": "/pages/component/identity_a/index/index",
+    "identity-a-mine": "/pages/component/identity_a/mine/index",
+    "identity-b-index": "/pages/component/identity_b/index/index",
+    "identity-b-mine": "/pages/component/identity_b/mine/index"
+  }
+}
