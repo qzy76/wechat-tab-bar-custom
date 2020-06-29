@@ -11,6 +11,7 @@
 		"minified": true,
 		"newFeature": true,
 		"coverView": true,
+		"nodeModules": true,
 		"autoAudits": false,
 		"showShadowRootInWxmlPanel": true,
 		"scopeDataCheck": false,
@@ -26,7 +27,7 @@
 		"userConfirmedUseCompilerModuleSwitch": false
 	},
 	"compileType": "miniprogram",
-	"libVersion": "2.8.3",
+	"libVersion": "2.11.3",
 	"appid": "wxe8c1bc827397a83e",
 	"projectname": "tabBar-component",
 	"debugOptions": {

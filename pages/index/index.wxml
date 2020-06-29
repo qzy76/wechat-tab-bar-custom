@@ -3,7 +3,7 @@
 非当前身份的页面点击会不生效，因为是先走登录
 
 <view bindtap="toPage" data-type="redirect" data-url="/pages/login/index">导航页--点击返回选择身份页</view>
-<view bindtap="toPage" data-url="/pages/to_route/index">导航页--点击跳转到非导航栏页</view>
+<view bindtap="toPage" data-url="/pages/to_route/index">导航页--点击跳转到非导航栏长列表页</view>
 <view bindtap="toPage" data-url="/pages/component/identity_a/index/index">导航页--点击跳转到A身份首页</view>
 <view bindtap="toPage" data-url="/pages/component/identity_a/mine/index">导航页--点击跳转到A身份我的页面</view>
 <view bindtap="toPage" data-url="/pages/component/identity_b/index/index">导航页--点击跳转到B身份首页</view>

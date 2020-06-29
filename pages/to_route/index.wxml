@@ -1,2 +1,14 @@
 <!--pages/to_route/index.wxml-->
-<text>pages/to_route/index.wxml</text>
+<recycle-view batch="{{batchSetRecycleData}}" scroll-with-animation id="recycleId"
+
+bindscroll="bindscroll"
+bindscrolltolower="loadMore">
+  <view slot="before">长列表前面的内容</view>
+  <recycle-item wx:for="{{recycleList}}" wx:key="__index__">
+    <view>
+        <!-- <image style='width:80px;height:80px;float:left;' src="{{item.image_url}}"></image> -->
+      {{item.idx}}. {{item.title}}
+    </view>
+  </recycle-item>
+  <view slot="after">长列表后面的内容</view>
+</recycle-view>

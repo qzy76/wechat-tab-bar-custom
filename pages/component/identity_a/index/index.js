@@ -37,7 +37,6 @@ Component({
 			}
 			list.unshift(list.length+'  '+formatTime(new Date()))
 			this.setData({list})
-
 		},1000)
 	}
 })
